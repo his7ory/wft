@@ -79,6 +79,14 @@ button:hover {
     border: 2px solid #f44336;
 }
 
+#Trailer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 @media only screen and (max-width: 414px)  {
 
   .bgimg {
