@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WalserFortniteTurniere</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="bgimg">
+  <div class="topleft">
+    <p><i class="fas fa-chess-rook"></i></p>
+  </div>
+  <div class="middle">
+    <h1>Walser Fortnite Turniere</h1>
+    <h3>NEXT TOURNAMENT STARTS SOON</h3>
+    <hr>
+    <p id="demo"></p>
+     <br>
+     <button>TOURNAMENTS</button>
+   </div>
+   <div class="bottomleft">
+     <p>(c) dkueng</p>
+  </div>
+</div>
+
+<script>
+var countDownDate = new Date("Sep 5, 2018 16:00:00").getTime();
+
+var x = setInterval(function() {
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>

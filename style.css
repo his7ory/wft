@@ -1,0 +1,120 @@
+@font-face { font-family: FnFont; src: url('font.ttf'); }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.bgimg {
+  font-family: "FnFont", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    top: 25px;
+}
+
+.topleft p {
+    margin: 0px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 11px;
+}
+
+.bottomleft p {
+  margin: 0px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+}
+
+.middle p {
+  margin-bottom: 0px;
+}
+
+hr {
+    margin: auto;
+    width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+button {
+    background-color: #f44336;
+    border: 2px solid #f44336;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    font-family: "FnFont", Courier, monospace;
+}
+
+
+button:hover {
+    background-color: white;
+    color: #f44336;
+    border: 2px solid #f44336;
+}
+
+@media only screen and (max-width: 414px)  {
+
+  .bgimg {
+    font-size: 30px;
+  }
+
+  .middle h1 {
+      font-size: 35px;
+  }
+
+  .middle h3 {
+      font-size: 20px;
+  }
+
+  .middle p {
+      font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 320px)  {
+
+  .bgimg {
+    font-size: 20px;
+  }
+
+  .middle h1 {
+      font-size: 25px;
+  }
+
+  .middle h3 {
+      font-size: 15px;
+  }
+
+  .middle p {
+      font-size: 14px;
+  }
+
+}
